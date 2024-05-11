@@ -1,0 +1,46 @@
+-- Database test data script for web_assign2
+-- Author: Yi Yao
+
+-- Insert test data
+INSERT INTO products (product_id, product_name, quantity, price, status, inbound_date) VALUES ('A6769556', 'Smart Phone', 365, 899, 'In Stock', '2023-12-17');
+
+INSERT INTO products VALUES ('C4546735', 'Power Supply Adapter', 1050, 39.90, 'Shipped', '2023-11-13', '2024-01-20');
+
+INSERT INTO products (product_id, product_name, quantity, price, status, inbound_date) VALUES 
+('A8765667', 'Laptop', 100, 1499.99, 'In Stock', '2024-02-25');
+
+INSERT INTO products VALUES ('A9876543', 'Tablet', 200, 499.50, 'Shipped', '2024-01-10', '2024-03-21');
+
+INSERT INTO products (product_id, product_name, quantity, price, status, inbound_date) VALUES 
+('A2468101', 'Smart Watch', 200, 299.99, 'In Stock', '2024-02-05');
+
+INSERT INTO products VALUES ('B1357924', 'Smart Lighting', 150, 79.95, 'Shipped', '2023-10-18', '2024-03-15');
+
+INSERT INTO products (product_id, product_name, quantity, price, status, inbound_date) VALUES
+('B2468135', 'Smart Locks', 80, 129.99, 'In Stock', '2024-03-01');
+
+INSERT INTO products (product_id, product_name, quantity, price, status, inbound_date) VALUES
+('C9876543', 'Wireless Headphones', 120, 199.50, 'In Stock', '2024-03-10');
+
+INSERT INTO products (product_id, product_name, quantity, price, status, inbound_date) VALUES
+('C1357924', 'Gaming Mouse', 120, 49.90, 'In Stock', '2024-03-15');
+
+INSERT INTO products (product_id, product_name, quantity, price, status, inbound_date) VALUES
+('C2468135', 'Mechanical Keyboard', 70, 99.99, 'In Stock', '2023-11-20');
+
+INSERT INTO products VALUES ('A4528643', 'Desktop', 100, 1699, 'Shipped', '2024-03-02', '2024-03-25');
+
+INSERT INTO products (product_id, product_name, quantity, price, status, inbound_date) VALUES
+('C2486135', 'Bluetooth Speaker', 90, 129, 'In Stock', '2024-3-20');
+
+INSERT INTO products (product_id, product_name, quantity, price, status, inbound_date) VALUES
+('A8487345', 'PlayStation', 160, 649, 'In Stock', '2024-3-18');
+
+INSERT INTO products VALUES ('B4352443', 'Smart Camera', 200, 79, 'Shipped', '2024-02-27', '2024-03-23');
+
+INSERT INTO products (product_id, product_name, quantity, price, status, inbound_date) VALUES
+('A3857655', 'DSLR Camera', 50, 1099, 'In Stock', '2024-3-15');
+
+
+
+

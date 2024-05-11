@@ -1,0 +1,562 @@
+/* File name: style_index.css */
+/* Author: Yi Yao, Yanni Ye, Peiwen Liu */
+/* CSS style sheet for this website */
+
+/* Styling for index page */
+@font-face {
+    font-family: helveticaneue-thin; 
+    src: url('../fonts/helveticaneue-thin.ttf'); 
+}
+
+body {
+    background-color: #cec6b4;
+    font-family: helveticaneue-thin;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #3E4C3B
+}
+
+#headerDiv {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+}
+
+#headerDiv header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #3E4C3B;
+    color: #EAE3D0
+}
+
+header > h2 {
+    font-weight: 300;
+}
+
+nav {
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+nav a {
+    margin-left: 30px; 
+    color: #EAE3D0;
+    text-decoration: none
+}
+
+main {
+    margin-top: 70px;
+}
+
+main h2 {
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    background-color: #cec6b4
+}
+
+.dashboard {
+    grid-column: 1 / span 11;
+    grid-row: 1 / span 2;
+    display: flex; 
+    justify-content: space-between
+}
+
+.data {
+    flex: 1; 
+    text-align: left; 
+    padding-left: 10px;
+    height: 120px;
+    background-color: #EAE3D0;
+    margin: 0 0 0 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.data p {
+    margin-top: auto; 
+    margin-bottom: 5px;
+}
+
+.data div {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container {
+    grid-column: 1 / span 11;
+    grid-row: 3 / span 7;
+    margin: 0 0 0 5px;
+    background-color: #EAE3D0
+}
+
+.buttonArea {
+    height: 50px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 5px
+}
+
+#searchDiv {
+    margin-top: 18px;
+}
+
+#searchQuery {
+    height: 25px;
+    width: 200px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #cec6b4
+}
+
+.button {
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: #566E54;
+    color: #EAE3D0
+}
+
+.button:hover {
+    background-color: #cec6b4;
+    color: #3E4C3B;
+}
+
+#addButton {
+    margin-right: 40px
+}
+
+.tableArea {
+    height: 260px;
+    font-size: 14px
+}
+
+.tableContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 260px;
+    text-align: center
+}
+
+/* inventory table design start */
+.tableHead {
+    margin-bottom: 5px;
+}
+
+.tableBody {
+    color: #566E54;
+    height: 236px;
+    overflow-y: auto
+}
+
+.tableContainer th,
+.tableContainer td {
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+th.th-colId,
+td.td-colId {
+    width: 100px
+}
+
+th.th-colName,
+td.td-colName {
+    width: 200px
+}
+
+th.th-colQuantity,
+td.td-colQuantity {
+    width: 70px
+}
+
+th.th-colPrice,
+td.td-colPrice {
+    width: 100px
+}
+
+th.th-colStatus,
+td.td-colStatus {
+    width: 100px
+}
+
+th.th-colInbound,
+td.td-colInbound {
+    width: 110px
+}
+
+th.th-colOutbound,
+td.td-colOutbound {
+    width: 110px
+}
+
+th.th-blank,
+td.td-blank {
+    width: 40px
+}
+
+th.th-colModify,
+td.td-colModify {
+    width: 60px
+}
+
+th.th-colDelete,
+td.td-colDelete {
+    width: 50px
+}
+
+.dataLink {
+    color: rgb(0, 30, 108);
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color: #bdb7b7;
+}
+/* inventory table design end */
+
+.rightside {
+    grid-column: 12 / span 4;
+    grid-row: 1 / span 9;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px
+}
+
+#categoryPercentage {
+    height: 300px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #EAE3D0;
+    display: flex;
+    flex-direction: column;
+}
+
+#categoryPercentage div {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#categoryPercentage p {
+    padding: 0 20px;
+    margin-top: 5px; 
+    margin-bottom: 5px
+}
+
+#averageDays {
+    height: 150px;
+    text-align: center;
+    background-color: #EAE3D0;
+    display: flex;
+    flex-direction: column;
+}
+
+#averageDays div {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#averageDays p {
+    margin-top: auto; 
+    margin-bottom: 20px
+}
+
+/* style for pop-windows start*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+    padding-top: 30px;   
+}
+
+.modal-content {
+    background-color: #EAE3D0;
+    margin: 3% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    max-width: 555px;
+    height: 70%;     
+    border-radius: 40px;
+}
+#delete-content {
+    height: 25%; 
+}
+#delete-content p {
+    text-align: center;
+}
+.modal-content h2 {
+    text-align: center;   
+    font-weight: bold;
+    color: #3E4C3B;
+    font-size: 25px;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    align-items: flex-start; 
+}
+.left, 
+.right {
+    display: flex;
+    flex-direction: column; 
+}
+
+.left input, label,
+.right input, label, select {   
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;  
+    padding-left: 5px;  
+    margin-bottom: 5px;
+    height: 25px;
+    width: 185px;
+}
+
+.right input, label, select {
+    margin-bottom: 5px;
+}
+
+.content input, select {
+    background-color: #CBC5B6;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons button {
+    background-color: #566E54;
+    color: #EAE3D0;
+    border-radius: 10px;
+    border: none;
+    height: 34px;
+    width: 138px;
+    font-size: 12px;
+}
+.buttons button:hover {  
+    background-color: #cec6b4;
+    color: #3E4C3B
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* style for pop-windows end*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-style: italic;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: rgb(0, 30, 108)
+}
+
+/* Scrollbar design start */
+::-webkit-scrollbar {
+    width: 8px
+}
+
+::-webkit-scrollbar-track {
+    background-color: #EAE3D0
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #989191;
+    border-radius: 5px
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #566E54
+}
+/* Scrollbar design end */
+
+
+/* ------------------------html files style design--------------------------------- */
+a {
+    color: rgba(234,227,208);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgba(120,142,117); 
+}
+
+.account{
+    color: white;
+    font-weight: bolder;
+    text-align:right;
+    margin-right:10px;
+}
+
+header.homehead {
+    background-color: rgba(62,76,59) ; 
+    padding: 15px; 
+    display: grid;
+    grid-template-columns: 1fr auto; 
+
+    position: fixed; 
+    height:20px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Styling for homepage */
+body.home {
+    background-image: url('../images/Background.jpeg');
+    font-family: 'Helvetica Neue',sans-serif;
+    font-weight: 160;
+    color: rgba(234,227,208);
+}
+
+.homepage-header{
+    margin-top: 180px;
+    margin-left: 60px;
+    font-size: 30pt;
+}
+
+.homepage-header h1{
+    margin-bottom:-65px;
+}
+
+.homepage-content{
+    margin-top:80px;
+    margin-left:60px;
+    font-size: 27pt;
+    max-width: 700px; 
+}
+
+/* Styling for Signup Page */
+.homelink{
+    justify-self:end; 
+    font-weight: bolder;
+}
+
+.logo h1{
+    justify-self:start; 
+    margin-top: -5px;
+    font-weight:160;
+    font-size:25px;
+}
+
+.mainForm{
+    background: rgba(234,227,208,0.8);
+    width:1050px;
+    height:150vh; 
+    left:0;
+    margin-top:-40px;
+    margin-left:-10px;
+    padding-left:150px;
+    padding-right:200px;
+    box-sizing: border-box;
+}
+
+.entry{
+    color: rgb(76, 92, 75); 
+    font-weight: 300;
+    font-size: 60px;
+    margin-top:50px;
+    margin-left:100px;
+}
+
+h4{
+    color: rgb(76, 92, 75); 
+    margin-top:-70px;
+    margin-left:5px;
+    font-weight: 200;
+    font-size: 40px;
+    margin-bottom:30px;
+    margin-left:100px;
+}
+
+#signupForm input{
+    display:block;
+    background-color: rgba(234,227,208,0.8);
+
+    padding-left:10px;
+    width:500px;
+    height:40px;
+    margin-bottom:20px;
+    margin-left:100px;
+    box-sizing: border-box;
+
+    font-size: 28px;
+    font-family:'Helvetica Neue';
+    font-weight: 100; 
+
+    border: none;
+    border-radius: 10px;
+}
+
+#signupForm button{
+    background-color: rgb(76, 92, 75); 
+    width:500px;
+    height:40px;
+    color: rgba(234,227,208);
+    margin-left:100px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family:'Helvetica Neue';
+    font-weight: 200; 
+}
+
+#signupForm p{
+    position:absolute;
+    bottom:0;
+    margin-left:-140px;
+}
+
+.error {
+    color: rgb(209, 9, 9);
+    margin-top:-15px;
+    margin-bottom:10px;
+    margin-left:110px;
+    font-size: 1.3em;
+}

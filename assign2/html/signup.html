@@ -1,0 +1,48 @@
+<!-- 
+    File name: signup.html
+    Author: Peiwen Liu
+    Description: html file for signup page
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | WAREHOUSE</title>
+
+    <!-- import javascript and css file -->
+    <link rel="stylesheet" href="../css/style_index.css">
+    <script src="../js/validation.js" defer></script>
+</head>
+<body class="home">
+    <header class="homehead">
+        <div class="logo">
+            <h1>WAREHOUSE | Product Registration & Management</h1>
+        </div>
+        <nav>
+            <div class="homelink">
+                <a href="home.html">Home Page</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="mainForm">
+            <h2> - </h2>
+            <h3 class="entry">My Account</h3>
+            <h4>Sign up</h4>
+            <form id="signupForm" action="../server/signup.php" method="post">
+                <input type="text" id="name" name="name" placeholder="Name*" >
+                <input type="text" id="email" name="email" placeholder="Email*" >
+                <input type="text" id="employeeId" name="employeeId" placeholder="Employee ID*" >
+                <input type="password" id="password" name="password" placeholder="Password*" >
+                <input type="password" id="password2" name="password2" placeholder="Re-Type Password*" >
+                <button type="submit">SIGN UP</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
